@@ -1,1 +1,535 @@
 // Your styles go here
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+// Your styles go here
+body {
+    margin: 2em 6em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }   
+    h1{
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    h1 {
+        font-size: 1.5em;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    h2 { 
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        text-align:center;
+    }
+    h3{ 
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+      text-align:center;
+  }
+    small {
+        color: #d6b69e;
+    }
+
+
+    //------ JUMBOTRON ------//
+    .jumbotron-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity:0.6;
+        
+      }
+      
+      //link styling 
+      a{
+        color:#ADD8E6;
+        font-size: 20px;
+        font-style:bold;
+      }
+      a:hover{
+        color:#FDB44E;
+        font-size: 25px;
+      }
+      //center the title
+      .mb-4{
+        font-weight:bold;
+        text-align:center;
+        font-size:50px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      //center the main text
+      .mb-4-1{
+        text-align:center;
+        font-size:25px;
+        color:white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      //make the jumbotron bigger
+      .jumbotron{
+
+        height:70vh;
+      }
+
+      //button in jumbotron
+      .button {
+        background-color: white; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      //make a reservation button
+      .button1 {
+        background-color: transparent; 
+        color: white; 
+        border: 2px solid white;
+        position:relative;
+        left:400px;
+      }
+
+      //button hover animation
+      .button1:hover {
+        background-color:#ADD8E6;
+        transition: 0.7s;
+    }
+      
+
+      //css for the dots
+      .dot {
+        height: 10px;
+        width: 10px;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      //------ NAVBAR -----//
+    .navbar {
+        margin-bottom: 0px;
+    }
+
+    #logo-lg{
+        width:65px;
+    }
+    #logo-lg:hover{
+      transform: scale(1.1);
+      transition:0.5s;
+      z-index:102;
+  }
+   
+    //----- STYLING FOR OUR DIVS WITH TEXT ---//
+    .main_capture {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .capture_1{
+        text-align:left;
+        position:relative;
+        left:500px;
+        width: 800px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .capture_2{
+        //margin: 10px 20px;
+        width: 250px;
+        position:relative;
+        right:720px;
+        font-size:40px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    //------ ICON STYLING ----//
+    .main_box {
+      display: flex;
+      flex-direction: row;
+  }
+  .boxOne svg{
+    width:50px;
+    height:60px;
+     fill: #ADD8E6;
+  }
+  .boxOne svg:hover{
+    transform: scale(1.1);
+    transition:0.5s;
+    z-index:102;
+     fill: #FDB44E;
+  }
+
+.boxOne{
+  position:relative;
+  left:100px;
+}
+
+//center our Reviews Text
+.boxOne .boxOne_stars{
+  position:relative;
+  left:40px;
+}
+
+//our hiking svg
+.boxOne_hiking svg{
+  width:100px;
+  height:100px;
+   fill: #ADD8E6;
+}
+.boxOne_hiking svg:hover{
+  transform: scale(1.1);
+  transition:0.5s;
+  z-index:102;
+   fill: #FDB44E;
+}
+
+.boxOne_hiking{
+position:relative;
+left:100px;
+}
+
+//center our Reviews Text
+.boxOne_hiking .boxOne_hiking_svg{
+position:relative;
+left:40px;
+}
+
+.boxTwo svg{
+  width:70px;
+  height:70px;
+  fill: #ADD8E6;
+}
+
+.boxTwo svg:hover{
+  transform: scale(1.1);
+  transition:0.5s;
+  z-index:102;
+  fill: #FDB44E;
+}
+.boxTwo{
+  position:relative;
+  left:390px;
+}
+.boxTwo .boxTwo_cam{
+  position:relative;
+  left:-20px;
+}
+
+//biking
+.boxTwo_biking svg{
+  width:110px;
+  height:110px;
+  fill: #ADD8E6;
+}
+
+.boxTwo_biking svg:hover{
+  transform: scale(1.1);
+  transition:0.5s;
+  z-index:102;
+  fill: #FDB44E;
+}
+.boxTwo_biking{
+  position:relative;
+  left:300px;
+}
+.boxTwo_biking .boxTwo_bking_svg{
+  position:relative;
+  left:-20px;
+}
+//bell
+.boxThree svg{
+  width:70px;
+  height:70px;
+  fill: #ADD8E6;
+}
+.boxThree svg:hover{
+  transform: scale(1.1);
+  transition:0.5s;
+  z-index:102;
+  fill: #FDB44E;
+}
+.boxThree{
+  position:relative;
+  left:700px;
+}
+.boxThree .boxThree_bell{
+  position:relative;
+  left:-30px;
+}
+
+//skiing
+.boxThree_skiing svg{
+  width:100px;
+  height:100px;
+  fill: #ADD8E6;
+}
+.boxThree_skiing svg:hover{
+  transform: scale(1.1);
+  transition:0.5s;
+  z-index:102;
+  fill: #FDB44E;
+}
+.boxThree_skiing{
+  position:relative;
+  left:500px;
+}
+.boxThree_skiing .boxThree_skiing_svg{
+  position:relative;
+  left:-30px;
+}
+
+//Boating
+.boxFour_boating svg{
+  width:100px;
+  height:100px;
+  fill: #ADD8E6;
+}
+.boxFour_boating svg:hover{
+  transform: scale(1.1);
+  transition:0.5s;
+  z-index:102;
+  fill: #FDB44E;
+}
+.boxFour_boating{
+  position:relative;
+  left: 700px;
+}
+.boxFour_boating .boxFour_boating_svg{
+  position:relative;
+  left:-30px;
+}
+
+//---- HORIZONTAL LINE ----//
+hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//----- SECOND IMAGE ----//
+#second_image{
+  width:60%;
+  height:70%;
+  position:relative;
+  left:250px;
+  opacity:0.8;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+//------ Additional text at bottom ----- //@at-root
+.additional_text{
+  text-align:center;
+  width:700px;
+  position:relative;
+  left:250px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+//------ Text color of bottom banner -----//
+.mb-4_3{
+  color:black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+//------- Bottom Dot ------//
+   //css for the dots
+   .dot_2 {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  //reviewer text needs to be smaller
+  .reviewer{
+    font-size:10px;
+  }
+
+  //styling for the bottom footer
+  .bottom_sign{
+    position:relative;
+    left:-390px;
+  }
+
+  //text styling in the about us page
+  .about_us_text{
+    font-size:27px;
+    text-align:center;
+  }
+
+  //about us pic styling
+  #about_us_pic{
+    width:500px;
+    height:700px;
+    position:relative;
+    left:-500px;
+  }
+
+  //text next to our about_us image
+  .capture_3{
+
+    height:300px;
+    width:500px;
+    position:relative;
+    left:-200px;
+    font-size:22px;
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  //flex box styling
+  //reference: https://medium.com/@miguelznunez/how-to-create-a-responsive-image-grid-gallery-with-html-css-flexbox-1a4ea78f1ab3
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  //container storing our image gallery
+  .container {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+  }
+
+  //spacing between our title and image gallery
+  .title {
+    margin-bottom: 2rem;
+  }
+
+  //create our flexbox of images
+  .photo-gallery {
+    display: flex;
+    gap: 20px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  //fit our photos
+  .photo img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  //when hovering over images
+  //fit our photos
+  .photo img:hover {
+   transform: scale(1.1);
+   transition:0.5s;
+   z-index:102;
+  }
+
+
+
+//----- ANIMATION OF OUR GALLERY USING SASS
+// Variables.
+$tile-bg: #cfcfdf;
+.photo {
+  animation: 3.5s ease 0s pulse infinite;
+  background: $tile-bg;
+  border-radius: 4px;
+  float: left;
+}
+
+// Loop from 1-9.
+@for $i from 1 through 9 {
+  .photo {
+    
+    // :nth-child(1-9) 
+    &:nth-child(#{$i}) {
+      
+      // Delay the animation. Delay increases as items loop.
+      animation-delay: $i * (1s / 18);
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background: $tile-bg;
+    transform: scale(1);
+  }
+  
+  25% {
+    background: darken($tile-bg, 10%);
+    transform: scale(1.015);
+  }
+  
+  50% {
+    background: $tile-bg;
+    transform: scale(1);
+  }
+
+  
+}
+
+//--------- TEXT OVER IMAGES -------//
+//text over image on hover
+//referrence: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.photo img:hover {
+  opacity: 0.3;
+}
+
+.photo:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+//-------- SERVICES PAGE STYLING -----//
+.services{
+  position:relative;
+  left: -50px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.capture_1 p{
+  font-size:25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+//------ STYLING FOR SERVICES PROFESSIONALS -----//
+#hiking{
+  text-align:center;
+  background-color: lightgray;
+}
+
+#hiking_guide_img{
+  width:400px;
+  height:400px;
+}
+
+#hiking_guide_img:hover {
+  transform: scale(1.1);
+  transition:0.5s;
+  z-index:102;
+ }
+
+.mb-4_3 p{
+  font-size:20px;
+}

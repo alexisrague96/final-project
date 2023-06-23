@@ -6,15 +6,151 @@
   <title>Project Starter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- import boostrap/fontawesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
   <!-- 
     Don't add stylesheets/main.css or javascripts/main.js manually. 
     They will be added automatically by Webpack.
   -->
 </head>
 
-<body>
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 2620!!!!!</h1>
+<header> 
 
-</body>
-</html>
+<!--navigation bar with links to other pages from bootstrap-->
+<ul class="nav justify-content-center">
+  <h1><img onclick="location.href='index.html'" id="logo-lg" src="images/image4.png" alt="Logo Image"></h1> 
+  <li class="nav-item">
+    <a class="nav-link active" href="homepage.html">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="gallery.html">Gallery</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="services.html">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="mainpage.html">Reviews</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="bookyourtour.html">Contact</a>
+  </li>
+</ul>
+
+<!-- JUMBOTRON HTML-->
+<div class="container py-5">
+  <div class="jumbotron text-white jumbotron-image shadow" style="background-image: url('images/image6.png');">
+    <h2 class="mb-4">
+      Capture the Adventure
+    </h2>
+    <br/>
+    <br/>
+    <br/>
+    <p class="mb-4-1">
+         Blog Posts <span class="dot"></span> Travel Guide and Tips <span class="dot"></span> Destinations
+    </p>
+   <br/>
+   <div>
+    <!--reservation schedule button-->
+    <button onclick="location.href='bookyourtour.html'"class="button button1">Make a Reservation</button>
+  </div>
+  </div>
+</div>
+
+<!-- letter image-->
+</header> 
+
+<div class="main_capture">
+<div class="capture_1">
+
+  <p>At “Capture the Adventure”, we don’t just go on vacations, we create memorable adventures for years to come and also share our explorations with a like-minded community.
+    “Capture the Adventure” has been around for over 50 years, and we started as a small group of hikers who loved to capture amazing wildlife and landscape photos while camping or
+    backpacking off-the-beaten paths. Our unique adventures as a group of friends inspired us to create a community of like-minded individuals who also enjoyed nature through the lens and wanted to create a larger experience for beginners to get started in the outdoor world.</p>
+  </p>
+
+  </div>
+
+  <div class="capture_2">
+
+    <p>IT'S TIME TO GET AWAY.</p>
+    
+    </div>
+  </div>
+<br/><br/><br/><br/>
+  <!--Icons beneath our paragraphs-->
+  <div class="main_box">
+
+    <!--Stars-->
+<div class="boxOne"
+  onclick="location.href='gallery.html'">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
+  <div class="boxOne_stars">
+  <p>Read Our Reviews</p>
+</div>
+</div>
+
+<!-- Camera -->
+<div class="boxTwo" onclick="location.href='gallery.html'">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M220.6 121.2L271.1 96 448 96v96H333.2c-21.9-15.1-48.5-24-77.2-24s-55.2 8.9-77.2 24H64V128H192c9.9 0 19.7-2.3 28.6-6.8zM0 128V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H271.1c-9.9 0-19.7 2.3-28.6 6.8L192 64H160V48c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16l0 16C28.7 64 0 92.7 0 128zM168 304a88 88 0 1 1 176 0 88 88 0 1 1 -176 0z"/></svg>
+  <div class="boxTwo_cam">
+    <p>View Our Content</p>
+  </div>
+</div>
+
+<!--Services bell-->
+<div class="boxThree" onclick="location.href='services.html'">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M216 64c-13.3 0-24 10.7-24 24s10.7 24 24 24h16v33.3C119.6 157.2 32 252.4 32 368H480c0-115.6-87.6-210.8-200-222.7V112h16c13.3 0 24-10.7 24-24s-10.7-24-24-24H256 216zM24 400c-13.3 0-24 10.7-24 24s10.7 24 24 24H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H24z"/></svg>
+  <div class="boxThree_bell">
+    <p>Explore our Services</p>
+  </div>
+</div>
+</div>
+
+<!-- Horizontal line-->
+<hr />
+<br/><br/><br/>
+<!--additional image-->
+<img id="second_image" src="images/image5.png" alt="Second Image">
+<br/>
+<br/>
+<br/>
+ <h2>START YOUR JOURNEY TODAY</h2>
+ <div class="additional_text">
+  <p>Visit the nation’s top locations for outdoor landscape, active wildlife, and adventure photography with our recognized photographers with their photo tours. These experienced and knowledgeable experts will help you get the best possible shots and handle all the planning and details of your next adventure. 
+    These tours offer planned and productive fun while also giving you all the tips and tricks you need to not only capture your adventure, but preserve the memories to come!
+    If you’re not ready for your outdoor adventure yet, no worries! Stay tuned and up-to-date on the latest of our special adventures with our travel guide and blog. We offer tips & tricks on good packing, best gear, and funny stories of our recent expeditions. There is plenty to see in our gallery and hopefully help inspire you to start your own adventure. 
+    </p>
+  </div>
+
+ 
+
+  <!-- FOOTER BOOTSTRAP STYLE-->
+
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4_3">
+      <p>“I was able to book my whole photography tour to one of my favorite places ever! Iearned so much about taking good travel photos.”</p>
+      <span class="dot_2"></span> 
+      <div class="reviewer">
+      <p>Maria Lopez, Professional Backcountry Skiier</p> 
+    </div>
+    </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="bottom_sign">
+      <p>Ready To Get Started</p>
+      <p>Sign Up or Contact Us</p>
+    </div>
+      <a class="text-dark" href="https://mdbootstrap.com/">CAPTURE THE ADVENTURE</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
