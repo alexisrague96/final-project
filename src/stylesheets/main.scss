@@ -1,28 +1,36 @@
 // Your styles go here
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
+//----- SASS -----//
+//SASS variables for generic things
+$fontFamily:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+// color
+$primary-color-blue: #ADD8E6;
+$primary-color-orange: #FDB44E;
+
 // Your styles go here
 body {
     margin: 2em 6em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: $fontFamily;
+ 
     }   
     h1{
         color: white;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$fontFamily;
     
     }
     h1 {
         font-size: 1.5em;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$fontFamily;
     }
     h2 { 
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$fontFamily;
         font-size: 40px;
         text-align:center;
     }
     h3{ 
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      
+      font-family:$fontFamily;
       text-align:center;
   }
     small {
@@ -41,12 +49,12 @@ body {
       
       //link styling 
       a{
-        color:#ADD8E6;
+        color:$primary-color-blue;
         font-size: 20px;
         font-style:bold;
       }
       a:hover{
-        color:#FDB44E;
+        color:$primary-color-orange;
         font-size: 25px;
       }
       //center the title
@@ -54,7 +62,7 @@ body {
         font-weight:bold;
         text-align:center;
         font-size:50px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$fontFamily;
       }
 
       //center the main text
@@ -62,7 +70,7 @@ body {
         text-align:center;
         font-size:25px;
         color:white;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$fontFamily;
       }
       //make the jumbotron bigger
       .jumbotron{
@@ -82,6 +90,7 @@ body {
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
+        font-family:$fontFamily;
       }
 
       //make a reservation button
@@ -91,14 +100,29 @@ body {
         border: 2px solid white;
         position:relative;
         left:400px;
+        font-family:$fontFamily;
+      }
+      .button2 {
+        background-color: transparent; 
+        color: white; 
+        border: 2px solid white;
+        position:relative;
+        left:50px;
+        font-family:$fontFamily;
+        width:150px;
+        height:60px;
       }
 
       //button hover animation
       .button1:hover {
-        background-color:#ADD8E6;
+        background-color:$primary-color-blue;
         transition: 0.7s;
     }
-      
+      //button hover animation
+      .button2:hover {
+        background-color:$primary-color-blue;
+        transition: 0.7s;
+    }
 
       //css for the dots
       .dot {
@@ -133,7 +157,7 @@ body {
         position:relative;
         left:500px;
         width: 800px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$fontFamily;
     }
 
     .capture_2{
@@ -142,7 +166,7 @@ body {
         position:relative;
         right:720px;
         font-size:40px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:$fontFamily;
     }
 
     //------ ICON STYLING ----//
@@ -153,13 +177,13 @@ body {
   .boxOne svg{
     width:50px;
     height:60px;
-     fill: #ADD8E6;
+     fill: $primary-color-blue;
   }
   .boxOne svg:hover{
     transform: scale(1.1);
     transition:0.5s;
     z-index:102;
-     fill: #FDB44E;
+     fill: $primary-color-orange
   }
 
 .boxOne{
@@ -177,13 +201,13 @@ body {
 .boxOne_hiking svg{
   width:100px;
   height:100px;
-   fill: #ADD8E6;
+   fill: $primary-color-blue;
 }
 .boxOne_hiking svg:hover{
   transform: scale(1.1);
   transition:0.5s;
   z-index:102;
-   fill: #FDB44E;
+   fill: $primary-color-orange
 }
 
 .boxOne_hiking{
@@ -200,14 +224,14 @@ left:40px;
 .boxTwo svg{
   width:70px;
   height:70px;
-  fill: #ADD8E6;
+  fill: $primary-color-blue;
 }
 
 .boxTwo svg:hover{
   transform: scale(1.1);
   transition:0.5s;
   z-index:102;
-  fill: #FDB44E;
+  fill:$primary-color-orange
 }
 .boxTwo{
   position:relative;
@@ -222,14 +246,14 @@ left:40px;
 .boxTwo_biking svg{
   width:110px;
   height:110px;
-  fill: #ADD8E6;
+  fill: $primary-color-blue;
 }
 
 .boxTwo_biking svg:hover{
   transform: scale(1.1);
   transition:0.5s;
   z-index:102;
-  fill: #FDB44E;
+  fill: $primary-color-orange
 }
 .boxTwo_biking{
   position:relative;
@@ -243,13 +267,13 @@ left:40px;
 .boxThree svg{
   width:70px;
   height:70px;
-  fill: #ADD8E6;
+  fill: $primary-color-blue;
 }
 .boxThree svg:hover{
   transform: scale(1.1);
   transition:0.5s;
   z-index:102;
-  fill: #FDB44E;
+  fill: $primary-color-orange
 }
 .boxThree{
   position:relative;
@@ -264,13 +288,13 @@ left:40px;
 .boxThree_skiing svg{
   width:100px;
   height:100px;
-  fill: #ADD8E6;
+  fill: $primary-color-blue;
 }
 .boxThree_skiing svg:hover{
   transform: scale(1.1);
   transition:0.5s;
   z-index:102;
-  fill: #FDB44E;
+  fill: $primary-color-orange
 }
 .boxThree_skiing{
   position:relative;
@@ -285,13 +309,13 @@ left:40px;
 .boxFour_boating svg{
   width:100px;
   height:100px;
-  fill: #ADD8E6;
+  fill: $primary-color-blue;
 }
 .boxFour_boating svg:hover{
   transform: scale(1.1);
   transition:0.5s;
   z-index:102;
-  fill: #FDB44E;
+  fill: $primary-color-orange
 }
 .boxFour_boating{
   position:relative;
@@ -325,13 +349,13 @@ hr {
   width:700px;
   position:relative;
   left:250px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:$fontFamily;
 }
 
 //------ Text color of bottom banner -----//
 .mb-4_3{
   color:black;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:$fontFamily;
 }
 
 //------- Bottom Dot ------//
@@ -378,7 +402,7 @@ hr {
     left:-200px;
     font-size:22px;
     text-align:center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:$fontFamily;
   }
 
   //flex box styling
@@ -504,12 +528,12 @@ $tile-bg: #cfcfdf;
 .services{
   position:relative;
   left: -50px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:$fontFamily;
 }
 
 .capture_1 p{
   font-size:25px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:$fontFamily;
 }
 
 
@@ -532,4 +556,83 @@ $tile-bg: #cfcfdf;
 
 .mb-4_3 p{
   font-size:20px;
+  font-family:$fontFamily;
+}
+
+//------ CONTACT FORM STYLING -----//
+
+//contact us title
+.mb-4_5{
+  font-family:$fontFamily;
+  width:700px;
+  position: relative;
+  left:300px;
+
+}
+
+// icon colors
+.map_icon, .phone_icon, .email_icon, .btn{
+  fill: $primary-color-blue;
+}
+
+//resize the svg icon
+.map_icon svg, .phone_icon svg, .email_icon svg{
+  height:30px;
+  width:30px;
+}
+
+//animation on hover
+.map_icon svg:hover, .phone_icon svg:hover, .email_icon svg:hover{
+  transform: scale(1.1);
+  transition:0.5s;
+  z-index:102;
+  fill: #FDB44E;
+}
+
+//---- BOOKING SECTION OF THE CONTACT US PAGE -----//
+.section_booking{
+  font-family:$fontFamily;
+  width:950px;
+  position: relative;
+  left:380px;
+ 
+}
+
+//------- REVIEW SECTION OF THE WEBSITE -----//
+.mb-4_review_header{
+  font-family:$fontFamily;
+  font-size:50px;
+  font-style:bold;
+}
+.mb-4_review{
+  font-family:$fontFamily;
+}
+.mb-2_review{
+  font-size:14px;
+  font-family:$fontFamily;
+}
+
+//review star styling
+.review_star svg{
+  fill: $primary-color-blue;
+  height:30px;
+  width:30px;
+}
+
+.card{
+  width:300px;
+  margin-left:50px;
+  margin-bottom:20px;
+}
+//when hovering over a card
+.card:hover{
+  transform: scale(1.1);
+  transition:0.5s;
+  z-index:102;
+  fill: #FDB44E;
+}
+
+.d-flex img{
+  width:100px;
+  height:100px;
 }

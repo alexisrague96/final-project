@@ -1,86 +1,250 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-    <meta charset="utf-8"> 
-    <link rel="stylesheet" href="resumestylesheet.css"/>
 
-    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
-  
+<head>
+  <meta charset="utf-8">
+  <title>Project Starter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- import boostrap/fontawesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <!-- 
+    Don't add stylesheets/main.css or javascripts/main.js manually. 
+    They will be added automatically by Webpack.
+  -->
 </head>
 
-<body>
-  <li><a href="homepage.html">Home</a></li>
-    <li><a href="mainpage.html">About Us</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="bookyourtour.html">Book your Tour</a></li>
-<h1>Book your Tour</h1>
+<header> 
+<div class="body_of_booking">
+<!--navigation bar with links to other pages from bootstrap-->
+<ul class="nav justify-content-center">
+  <h1><img onclick="location.href='index.html'" id="logo-lg" src="images/image4.png" alt="Logo Image"></h1> 
+  <li class="nav-item">
+    <a class="nav-link active" href="homepage.html">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="gallery.html">Gallery</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="services.html">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="mainpage.html">Reviews</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="bookyourtour.html">Contact</a>
+  </li>
+</ul>
 
-<h2>Guide 1</h2>
-<p>Hello! My name is Jeremy Ferris. 
-  I got my start in outdoor photography by getting my first job as a backpacking guide. 
-  I love taking photos of mountan landscapes and forest areas. </p>
+<!--BOOKING FROM USING BOOTSTRAP-->
+ <!--Section heading-->
+ <h2 class="h1-responsive font-weight-bold text-center my-4">Book with Us!</h2>
+ <h3>Start your adventure today.</h3>
+ <div id="booking" class="section_booking"> 
 
-<!--place book now button here-->
+  <div class="section-center"> 
+    <div class="container"> 
+      <div class="row"> 
+        <div class="booking-form"> 
+          <div class="form-header"> 
+            <h1>Make your reservation</h1> 
+          </div> <form> 
+            <div class="form-group"> <input class="form-control" type="text" placeholder="Country, ZIP, city..."> 
+              <span class="form-label">Destination</span> 
+            </div> <div class="row"> 
+              <div class="col-md-6"> 
+                <div class="form-group"> 
+                  <input class="form-control" type="date" required> 
+                  <span class="form-label">Start Date</span> 
+                </div> 
+              </div> 
+              <div class="col-md-6"> 
+                <div class="form-group"> 
+                  <input class="form-control" type="date" required> 
+                  <span class="form-label">End Date</span> 
+                </div> 
+              </div> 
+            </div> 
+            <div class="row"> 
+              <div class="col-md-4"> 
+                <div class="form-group"> <select class="form-control" required> 
+                  <option value="" selected hidden>Type</option> 
+                  <option>Hiking</option> 
+                  <option>Biking</option> 
+                  <option>Skiing</option> 
+                  <option>Boating</option> 
+                </select> <span class="select-arrow"></span> 
+                <span class="form-label">Adventure Type</span> 
+              </div> 
+            </div> 
+            <div class="col-md-4"> 
+                <div class="form-group"> <select class="form-control" required>
+                   <option value="" selected hidden>no of adults</option> 
+                   <option>1</option> 
+                   <option>2</option>
+                    <option>3</option> 
+                  </select> 
+                  <span class="select-arrow"></span> 
+                  <span class="form-label">Adults</span> 
+                </div> </div> <div class="col-md-4"> 
+                  <div class="form-group"> 
+                    <select class="form-control" required> 
+                      <option value="" selected hidden>no of children</option> 
+                      <option>0</option> 
+                      <option>1</option> 
+                      <option>2</option> 
+                    </select> 
+                    <span class="select-arrow"></span> 
+                    <span class="form-label">Children</span> 
+                  </div> 
+                </div> 
+              </div> 
+              <div class="row"> 
+                <div class="col-md-6"> 
+                  <div class="form-group">
+                     <input class="form-control" type="email" placeholder="Enter your Email"> <span class="form-label">Email</span>
+                     </div> 
+                    </div> 
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                         <input class="form-control" type="tel" placeholder="Enter you Phone"> 
+                         <span class="form-label">Phone</span> 
+                        </div> 
+                      </div> 
+                    </div> 
+                    <div class="btn btn-primary"> 
+                      <button class="btn btn-primary">Book Now</button> 
+                    </div> 
+                  </form> 
+                </div> 
+              </div> 
+            </div> 
+          </div>
+</div><hr/>
 
-<h2>Guide 2</h2>
-<p>My name is Lesly Knope. 
-  I’ve spent my whole life traveling the outdoors and experiencing unique landscapes. 
-  I love taking photos of wildlife.</p>
+<!--- CONTACT FORM USING BOOTSTRAP -->
+<!--REFERENCE: https://mdbootstrap.com/docs/b4/jquery/forms/contact/-->
+<section class="mb-4_5">
 
-  <!--place book now button here-->
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">We want to hear from you! Please ask us any questions, from gear advice to ideas on your next destination.
+     </p>
 
-  <p>Get in touch with me here.</p>
+  <div class="row">
 
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
+              <!--Grid row-->
+              <div class="row">
 
-  <form>
-    <fieldset>
-      <legend>Personal Details</legend>
-       
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+            <div class="send_button">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div></div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><div class="map_icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></div>
+                  <p>Eden UT, 84310 USA</p>
+              </li>
+
+              <li><div class="phone_icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></div>
+                  <p>111-222-4455</p>
+              </li>
+
+              <li><div class="email_icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></div>
+                  <p>alexisrague@gmail.com</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+
  
-<p>
-        <label>
-          Salutation
-          <br />
-          <select name="salutation">
-            <option>--None--</option>
-            <option>Mr.</option>
-            <option>Ms.</option>
-            <option>Mrs.</option>
-            <option>Dr.</option>
-            <option>Prof.</option>
-          </select>
-        </label>
-      </p>
- 
- 
-       
- 
-<p>
-        <label>First name: <input name="firstName" /></label>
-      </p>
- 
- 
-       
- 
-<p>
-        <label>Last name: <input name="lastName" /></label>
-      </p>
- 
 
-  <legend>Your Information</legend>
-  <ul>
-    <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
-    <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
-    <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
-    <li>Message<br>
-    <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
-  </ul>
-
-  <p>
-        <button type="submit">Submit</button>
-      </p>
-</fieldset>
-</form>
-</body>
+  <!-- FOOTER BOOTSTRAP STYLE-->
+<br/><br/><br/><br/>
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4_3">
+     
+    </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="bottom_sign">
+        <p>Ready To Get Started <button onclick="location.href='services.html'"class="button button2">Get Started</button></p>
+        <p>Sign Up or Contact Us  <button onclick="location.href='bookyourtour.html'"class="button button2">Sign Up</button></p>
+      </div>
+      <a class="text-dark" href="https://mdbootstrap.com/">CAPTURE THE ADVENTURE</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>
